@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1488</width>
+    <height>428</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="3" column="8">
+       <widget class="QLCDNumber" name="lcdNumber_17"/>
+      </item>
+      <item row="3" column="16">
+       <widget class="QLCDNumber" name="lcdNumber_21"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="salve_RPi1">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>15</pointsize>
+          <weight>50</weight>
+          <italic>true</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>1.salve_RPi</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="14">
+       <widget class="QLCDNumber" name="lcdNumber_7"/>
+      </item>
+      <item row="0" column="11" rowspan="10">
+       <widget class="Line" name="line_6">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="21" rowspan="10">
+       <widget class="Line" name="line_11">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="13" rowspan="9">
+       <widget class="Line" name="line_7">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="15" rowspan="9">
+       <widget class="Line" name="line_8">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="10">
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="9" rowspan="9">
+       <widget class="Line" name="line_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="19" rowspan="9">
+       <widget class="Line" name="line_10">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="8">
+       <widget class="QLCDNumber" name="lcdNumber_30"/>
+      </item>
+      <item row="4" column="6">
+       <widget class="QLCDNumber" name="lcdNumber_29"/>
+      </item>
+      <item row="4" column="4">
+       <widget class="QLCDNumber" name="lcdNumber_28"/>
+      </item>
+      <item row="4" column="20">
+       <widget class="QLCDNumber" name="lcdNumber_36"/>
+      </item>
+      <item row="4" column="12">
+       <widget class="QLCDNumber" name="lcdNumber_32"/>
+      </item>
+      <item row="4" column="10">
+       <widget class="QLCDNumber" name="lcdNumber_31"/>
+      </item>
+      <item row="1" column="8">
+       <widget class="QLabel" name="Luftdrucksensor4">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>4.Sensor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" colspan="9">
+       <widget class="QLabel" name="Luftdruck">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>18</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>Pressure/bar</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="12" colspan="9">
+       <widget class="QLabel" name="Temperatur">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>18</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Temperature/°C</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="salve_RPi8">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>15</pointsize>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>8.salve_RPi</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="salve_RPi6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>15</pointsize>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>6.salve_RPi</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="salve_RPi4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>15</pointsize>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>4.salve_RPi</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="salve_RPi2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>15</pointsize>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>2.salve_RPi</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLCDNumber" name="lcdNumber_2"/>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="salve_RPi7">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>15</pointsize>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>7.salve_RPi</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="10">
+       <widget class="QLabel" name="Luftdrucksensor5">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>5.Sensor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="10">
+       <widget class="QLCDNumber" name="lcdNumber_5"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="Luftdrucksensor1">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>1.Sensor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="16">
+       <widget class="QLabel" name="Temperatursensor3">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>3.Sensor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="14">
+       <widget class="QLabel" name="Temperatursensor2">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>2.Sensor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="18">
+       <widget class="QLabel" name="Temperatursensor4">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>4.Sensor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="6">
+       <widget class="QLCDNumber" name="lcdNumber_3"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLCDNumber" name="lcdNumber_1">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="8">
+       <widget class="QLCDNumber" name="lcdNumber_4"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="salve_RPi5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>15</pointsize>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>5.salve_RPi</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="20">
+       <widget class="QLabel" name="Temperatursensor5">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>5.Sensor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="salve_RPi3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>15</pointsize>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>3.salve_RPi</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLCDNumber" name="lcdNumber_14"/>
+      </item>
+      <item row="4" column="22">
+       <widget class="QLCDNumber" name="lcdNumber_37"/>
+      </item>
+      <item row="3" column="6">
+       <widget class="QLCDNumber" name="lcdNumber_16"/>
+      </item>
+      <item row="1" column="7" rowspan="9">
+       <widget class="Line" name="line_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5" rowspan="9">
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="22" colspan="3">
+       <widget class="QLabel" name="Beschleunigung">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>18</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Acceleration/m/s-2</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLabel" name="Luftdrucksensor2">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>2.Sensor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="17" rowspan="9">
+       <widget class="Line" name="line_9">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QLabel" name="Luftdrucksensor3">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>3.Sensor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3" rowspan="9">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="12">
+       <widget class="QLabel" name="Temperatursensor1">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>1.Sensor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="20">
+       <widget class="QLCDNumber" name="lcdNumber_10"/>
+      </item>
+      <item row="2" column="16">
+       <widget class="QLCDNumber" name="lcdNumber_8"/>
+      </item>
+      <item row="2" column="18">
+       <widget class="QLCDNumber" name="lcdNumber_9"/>
+      </item>
+      <item row="2" column="22">
+       <widget class="QLCDNumber" name="lcdNumber_11"/>
+      </item>
+      <item row="2" column="12">
+       <widget class="QLCDNumber" name="lcdNumber_6"/>
+      </item>
+      <item row="4" column="18">
+       <widget class="QLCDNumber" name="lcdNumber_35"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLCDNumber" name="lcdNumber_27"/>
+      </item>
+      <item row="3" column="24">
+       <widget class="QLCDNumber" name="lcdNumber_26"/>
+      </item>
+      <item row="2" column="24">
+       <widget class="QLCDNumber" name="lcdNumber_13"/>
+      </item>
+      <item row="4" column="14">
+       <widget class="QLCDNumber" name="lcdNumber_33"/>
+      </item>
+      <item row="3" column="10">
+       <widget class="QLCDNumber" name="lcdNumber_18"/>
+      </item>
+      <item row="3" column="18">
+       <widget class="QLCDNumber" name="lcdNumber_22"/>
+      </item>
+      <item row="4" column="23">
+       <widget class="QLCDNumber" name="lcdNumber_38"/>
+      </item>
+      <item row="3" column="14">
+       <widget class="QLCDNumber" name="lcdNumber_20"/>
+      </item>
+      <item row="2" column="23">
+       <widget class="QLCDNumber" name="lcdNumber_12"/>
+      </item>
+      <item row="3" column="20">
+       <widget class="QLCDNumber" name="lcdNumber_23"/>
+      </item>
+      <item row="3" column="12">
+       <widget class="QLCDNumber" name="lcdNumber_19"/>
+      </item>
+      <item row="3" column="22">
+       <widget class="QLCDNumber" name="lcdNumber_24"/>
+      </item>
+      <item row="3" column="4">
+       <widget class="QLCDNumber" name="lcdNumber_15"/>
+      </item>
+      <item row="1" column="23">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Y-Richtung</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="22">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>X-Richtung</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="24">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Z-Richtung</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="16">
+       <widget class="QLCDNumber" name="lcdNumber_34"/>
+      </item>
+      <item row="3" column="23">
+       <widget class="QLCDNumber" name="lcdNumber_25"/>
+      </item>
+      <item row="5" column="6">
+       <widget class="QLCDNumber" name="lcdNumber_42"/>
+      </item>
+      <item row="5" column="4">
+       <widget class="QLCDNumber" name="lcdNumber_41"/>
+      </item>
+      <item row="4" column="24">
+       <widget class="QLCDNumber" name="lcdNumber_39"/>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLCDNumber" name="lcdNumber_40"/>
+      </item>
+      <item row="5" column="8">
+       <widget class="QLCDNumber" name="lcdNumber_43"/>
+      </item>
+      <item row="5" column="10">
+       <widget class="QLCDNumber" name="lcdNumber_44"/>
+      </item>
+      <item row="5" column="12">
+       <widget class="QLCDNumber" name="lcdNumber_45"/>
+      </item>
+      <item row="5" column="14">
+       <widget class="QLCDNumber" name="lcdNumber_46"/>
+      </item>
+      <item row="5" column="16">
+       <widget class="QLCDNumber" name="lcdNumber_47"/>
+      </item>
+      <item row="5" column="18">
+       <widget class="QLCDNumber" name="lcdNumber_48"/>
+      </item>
+      <item row="5" column="20">
+       <widget class="QLCDNumber" name="lcdNumber_49"/>
+      </item>
+      <item row="5" column="22">
+       <widget class="QLCDNumber" name="lcdNumber_50"/>
+      </item>
+      <item row="5" column="23">
+       <widget class="QLCDNumber" name="lcdNumber_51"/>
+      </item>
+      <item row="5" column="24">
+       <widget class="QLCDNumber" name="lcdNumber_52"/>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLCDNumber" name="lcdNumber_53"/>
+      </item>
+      <item row="6" column="4">
+       <widget class="QLCDNumber" name="lcdNumber_54"/>
+      </item>
+      <item row="6" column="6">
+       <widget class="QLCDNumber" name="lcdNumber_55"/>
+      </item>
+      <item row="6" column="8">
+       <widget class="QLCDNumber" name="lcdNumber_56"/>
+      </item>
+      <item row="6" column="10">
+       <widget class="QLCDNumber" name="lcdNumber_57"/>
+      </item>
+      <item row="6" column="12">
+       <widget class="QLCDNumber" name="lcdNumber_58"/>
+      </item>
+      <item row="6" column="14">
+       <widget class="QLCDNumber" name="lcdNumber_59"/>
+      </item>
+      <item row="6" column="16">
+       <widget class="QLCDNumber" name="lcdNumber_60"/>
+      </item>
+      <item row="6" column="18">
+       <widget class="QLCDNumber" name="lcdNumber_61"/>
+      </item>
+      <item row="6" column="20">
+       <widget class="QLCDNumber" name="lcdNumber_62"/>
+      </item>
+      <item row="6" column="22">
+       <widget class="QLCDNumber" name="lcdNumber_63"/>
+      </item>
+      <item row="6" column="23">
+       <widget class="QLCDNumber" name="lcdNumber_64"/>
+      </item>
+      <item row="6" column="24">
+       <widget class="QLCDNumber" name="lcdNumber_65"/>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLCDNumber" name="lcdNumber_66"/>
+      </item>
+      <item row="7" column="4">
+       <widget class="QLCDNumber" name="lcdNumber_67"/>
+      </item>
+      <item row="7" column="6">
+       <widget class="QLCDNumber" name="lcdNumber_68"/>
+      </item>
+      <item row="7" column="8">
+       <widget class="QLCDNumber" name="lcdNumber_69"/>
+      </item>
+      <item row="7" column="10">
+       <widget class="QLCDNumber" name="lcdNumber_70"/>
+      </item>
+      <item row="7" column="12">
+       <widget class="QLCDNumber" name="lcdNumber_71"/>
+      </item>
+      <item row="7" column="14">
+       <widget class="QLCDNumber" name="lcdNumber_72"/>
+      </item>
+      <item row="7" column="16">
+       <widget class="QLCDNumber" name="lcdNumber_73"/>
+      </item>
+      <item row="7" column="18">
+       <widget class="QLCDNumber" name="lcdNumber_74"/>
+      </item>
+      <item row="7" column="20">
+       <widget class="QLCDNumber" name="lcdNumber_75"/>
+      </item>
+      <item row="7" column="22">
+       <widget class="QLCDNumber" name="lcdNumber_76"/>
+      </item>
+      <item row="7" column="23">
+       <widget class="QLCDNumber" name="lcdNumber_77"/>
+      </item>
+      <item row="7" column="24">
+       <widget class="QLCDNumber" name="lcdNumber_78"/>
+      </item>
+      <item row="8" column="2">
+       <widget class="QLCDNumber" name="lcdNumber_79"/>
+      </item>
+      <item row="8" column="4">
+       <widget class="QLCDNumber" name="lcdNumber_80"/>
+      </item>
+      <item row="8" column="6">
+       <widget class="QLCDNumber" name="lcdNumber_81"/>
+      </item>
+      <item row="8" column="8">
+       <widget class="QLCDNumber" name="lcdNumber_82"/>
+      </item>
+      <item row="8" column="10">
+       <widget class="QLCDNumber" name="lcdNumber_83"/>
+      </item>
+      <item row="8" column="12">
+       <widget class="QLCDNumber" name="lcdNumber_84"/>
+      </item>
+      <item row="8" column="14">
+       <widget class="QLCDNumber" name="lcdNumber_85"/>
+      </item>
+      <item row="8" column="16">
+       <widget class="QLCDNumber" name="lcdNumber_86"/>
+      </item>
+      <item row="8" column="18">
+       <widget class="QLCDNumber" name="lcdNumber_87"/>
+      </item>
+      <item row="8" column="20">
+       <widget class="QLCDNumber" name="lcdNumber_88"/>
+      </item>
+      <item row="9" column="24">
+       <widget class="QLCDNumber" name="lcdNumber_104"/>
+      </item>
+      <item row="8" column="22">
+       <widget class="QLCDNumber" name="lcdNumber_89"/>
+      </item>
+      <item row="8" column="23">
+       <widget class="QLCDNumber" name="lcdNumber_90"/>
+      </item>
+      <item row="8" column="24">
+       <widget class="QLCDNumber" name="lcdNumber_91"/>
+      </item>
+      <item row="9" column="2">
+       <widget class="QLCDNumber" name="lcdNumber_92"/>
+      </item>
+      <item row="9" column="4">
+       <widget class="QLCDNumber" name="lcdNumber_93"/>
+      </item>
+      <item row="9" column="6">
+       <widget class="QLCDNumber" name="lcdNumber_94"/>
+      </item>
+      <item row="9" column="8">
+       <widget class="QLCDNumber" name="lcdNumber_95"/>
+      </item>
+      <item row="9" column="10">
+       <widget class="QLCDNumber" name="lcdNumber_96"/>
+      </item>
+      <item row="9" column="12">
+       <widget class="QLCDNumber" name="lcdNumber_97"/>
+      </item>
+      <item row="9" column="14">
+       <widget class="QLCDNumber" name="lcdNumber_98"/>
+      </item>
+      <item row="9" column="16">
+       <widget class="QLCDNumber" name="lcdNumber_99"/>
+      </item>
+      <item row="9" column="18">
+       <widget class="QLCDNumber" name="lcdNumber_100"/>
+      </item>
+      <item row="9" column="20">
+       <widget class="QLCDNumber" name="lcdNumber_101"/>
+      </item>
+      <item row="9" column="22">
+       <widget class="QLCDNumber" name="lcdNumber_102"/>
+      </item>
+      <item row="9" column="23">
+       <widget class="QLCDNumber" name="lcdNumber_103"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1488</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSystem">
+    <property name="title">
+     <string>System</string>
+    </property>
+    <addaction name="actionReStart"/>
+    <addaction name="actionShutdown"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionEnd_Programm"/>
+   </widget>
+   <widget class="QMenu" name="menuSave">
+    <property name="title">
+     <string>Save data</string>
+    </property>
+    <addaction name="actionlocal"/>
+    <addaction name="actionto_usb_stick"/>
+   </widget>
+   <widget class="QMenu" name="menuRe">
+    <property name="title">
+     <string>Refresh</string>
+    </property>
+    <addaction name="actionRefresh"/>
+    <addaction name="actionMinwindow"/>
+   </widget>
+   <addaction name="menuSystem"/>
+   <addaction name="menuSave"/>
+   <addaction name="menuRe"/>
+  </widget>
+  <action name="actionReStart">
+   <property name="text">
+    <string>ReStart</string>
+   </property>
+  </action>
+  <action name="actionShutdown">
+   <property name="text">
+    <string>Shutdown</string>
+   </property>
+  </action>
+  <action name="actionlocal">
+   <property name="text">
+    <string>Locally</string>
+   </property>
+  </action>
+  <action name="actionto_usb_stick">
+   <property name="text">
+    <string>to a usb stick</string>
+   </property>
+  </action>
+  <action name="actionFrom_1_salve_RPi">
+   <property name="text">
+    <string>From 1.salve_RPi</string>
+   </property>
+  </action>
+  <action name="actionFrom_1_salve_RPi_2">
+   <property name="text">
+    <string>From 2.salve_RPi</string>
+   </property>
+  </action>
+  <action name="actionFrom_1_salve_RPi_3">
+   <property name="text">
+    <string>From 3.salve_RPi</string>
+   </property>
+  </action>
+  <action name="actionFrom_1_salve_RPi_4">
+   <property name="text">
+    <string>From 4.salve_RPi</string>
+   </property>
+  </action>
+  <action name="actionFrom_1_salve_RPi_5">
+   <property name="text">
+    <string>From 5.salve_RPi</string>
+   </property>
+  </action>
+  <action name="actionFrom_1_salve_RPi_6">
+   <property name="text">
+    <string>From 6.salve_RPi</string>
+   </property>
+  </action>
+  <action name="actionFrom_1_salve_RPi_7">
+   <property name="text">
+    <string>From 7.salve_RPi</string>
+   </property>
+  </action>
+  <action name="actionFrom_1_salve_RPi_8">
+   <property name="text">
+    <string>From 8.salve_RPi</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </action>
+  <action name="actionEnd_Programm">
+   <property name="text">
+    <string>End Programm</string>
+   </property>
+  </action>
+  <action name="actionMinwindow">
+   <property name="text">
+    <string>Minwindow</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

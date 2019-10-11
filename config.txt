@@ -1,0 +1,9 @@
+master_RPi:     SSID:7    Password:12345678
+1.slave_RPi:    SSID:7    Password:12345678
+2.slave_RPi:    SSID:7    Password:12345678
+3.slave_RPi:    SSID:7    Password:12345678
+4.slave_RPi:    SSID:7    Password:12345678
+5.slave_RPi:    SSID:7    Password:12345678
+6.slave_RPi:    SSID:7    Password:12345678
+7.slave_RPi:    SSID:7    Password:12345678
+8.slave_RPi:    SSID:7    Password:12345678

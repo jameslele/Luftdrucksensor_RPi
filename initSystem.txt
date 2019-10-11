@@ -1,0 +1,116 @@
+# programm copy
+Ordner "Luftdrucksensor_RPi" copy
+
+# nur update, no upgrade
+sudo apt-get update
+
+# install python3-pyqt5 for creat GUI
+sudo apt-get install python3-pyqt5
+
+# install library for plot
+sudo pip3 install matplotlib
+
+# install library for ADC ADS1115
+git clone https://github.com/adafruit/Adafruit_Python_ADS1x15.git
+cd Adafruit_Python_ADS1x15
+sudo python3 setup.py install
+
+# install library for MAX31855K
+git clone https://github.com/adafruit/Adafruit_Python_MAX31855.git
+cd Adafruit_Python_MAX31855
+sudo python3 setup.py install
+
+# network configuration
+    # install helper
+    sudo -Es
+    apt install rng-tools
+
+    # disable classic networking
+    systemctl mask networking.service
+    systemctl mask dhcpcd.service
+    mv /etc/network/interfaces /etc/network/interfaces~
+    sed -i '1i resolvconf=NO' /etc/resolvconf.conf
+
+    # enable systemd-networkd
+    systemctl enable systemd-networkd.service
+    systemctl enable systemd-resolved.service
+    ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+
+    cat > /etc/wpa_supplicant/wpa_supplicant-wlan0.conf <<EOF
+    country=GB
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+
+    network={
+        ssid="JamesDesktop"
+        psk="12345678"
+    }
+    EOF
+
+    chmod 600 /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
+    systemctl enable wpa_supplicant@wlan0.service
+
+
+    systemctl edit wpa_supplicant@wlan0.service
+    	[Service]
+    	ExecStartPre=/sbin/iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+    	ExecStopPost=-/sbin/iptables -t nat -D POSTROUTING -o wlan0 -j MASQUERADE
+
+    cat > /etc/wpa_supplicant/wpa_supplicant-wlan1.conf <<EOF
+    country=GB
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+
+    ap_scan=2
+    network={
+        ssid="RPiNet"
+        mode=2
+        key_mgmt=WPA-PSK
+        psk="12345678"
+        frequency=2412
+    }
+    EOF
+
+    chmod 600 /etc/wpa_supplicant/wpa_supplicant-wlan1.conf
+    systemctl enable wpa_supplicant@wlan1.service
+
+    cat > /etc/systemd/network/08-wlan0.network <<EOF
+    [Match]
+    Name=wlan0
+    [Network]
+    DHCP=yes
+    EOF
+
+    cat > /etc/systemd/network/12-wlan1.network <<EOF
+    [Match]
+    Name=wlan1
+    [Network]
+    Address=192.168.4.1/24
+    IPForward=yes
+    DHCPServer=yes
+    [DHCPServer]
+    DNS=84.200.69.80 84.200.70.40
+    EOF
+
+
+# activate vnc i2c spi...
+sudo raspi-config
+
+# autostart script
+    #If no odner autostart: 
+    cd .config
+    mkdir autostart
+    cd autostart 
+    sudo nano main.desktop
+    # if there are odner autostart
+    sudo nano /home/pi/.config/autostart/main.desktop
+    	[Desktop Entry]
+    	Name=main
+    	Comment=Python Program
+    	Exec=python3 /home/pi/Luftdrucksensor_RPi/main.py
+    	Icon=/home/pi/Luftdrucksensor_RPi/main.png
+    	Terminal=false
+    	MultipleArgs=false
+    	Type=Application
+    	Categories=Application;Development;
+    	StartupNotify=true
